@@ -11,6 +11,9 @@ import cufflinks as cf
 import plotly.graph_objects as go
 from plotly.offline import iplot, init_notebook_mode
 import matplotlib.pyplot as plt
+import plotly.io as pio
+
+
 
 
 st.title("Preço de Commodities") 
@@ -69,8 +72,4 @@ fig.update_layout(
     yaxis_title="Price ($)"
 )
 
-st.plotly_chart(fig, use_container_width=True)
-
-
-qf = cf. QuantFig(Df, title="Preço das ações da Apple em 2021", nome= opcao)
-st.plotly_chart(qf, use_container_width=True)
+st.plotly_chart(fig)
